@@ -65,17 +65,23 @@
 .main-display-area {
     background-color:var(--main-background);
     height: 50em;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section {
+    width:fit-content;
+    padding:2em;
+    height:250px;
 }
 
 
 
 .hero-section {
-    @media(min-width:1000px){
-        display: grid;
-
-      
-    }
-    height:100%;
+   
+   background-color:var(--main-text-color);
 
     .hero-info {
         border:2px solid red;
@@ -83,10 +89,6 @@
     }
 };
 
-.hero-section {
-    width:100%;
-    border:2px solid red;
-}
 
 
 

@@ -12,6 +12,7 @@
 }
 
 .App {
+  height:100vh;
   background: var(--main-background);
 }
 
@@ -54,22 +55,22 @@
 .main-display-area {
   background-color: var(--main-background);
   height: 50em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-section {
-  height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2em;
+  height: 250px;
 }
-@media (min-width: 1000px) {
-  .hero-section {
-    display: grid;
-  }
+
+.hero-section {
+  background-color: var(--main-text-color);
 }
 .hero-section .hero-info {
   border: 2px solid red;
   padding: 2em;
-}
-
-.hero-section {
-  width: 100%;
-  border: 2px solid red;
 }/*# sourceMappingURL=App.css.map */
