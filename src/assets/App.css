@@ -51,6 +51,11 @@
   font-weight: 600;
 }
 
+.main-display-area {
+  background-color: var(--main-background);
+  height: 50em;
+}
+
 .hero-section {
   height: 100%;
 }
