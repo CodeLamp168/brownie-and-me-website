@@ -12,7 +12,9 @@
 }
 
 .App {
+    border:2px solid red;
     background:var(--main-background);
+    height:100vh;
 }
 
 @mixin HeaderStyle {
@@ -88,6 +90,10 @@
         padding:clamp(1em, 2em, 3em);
     }
 };
+
+.footer-section {
+    background-color:var(--main-color);
+}
 
 
 

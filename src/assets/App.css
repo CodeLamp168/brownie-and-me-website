@@ -12,8 +12,9 @@
 }
 
 .App {
-  height:100vh;
+  border: 2px solid red;
   background: var(--main-background);
+  height: 100vh;
 }
 
 .Header {
@@ -73,4 +74,8 @@
 .hero-section .hero-info {
   border: 2px solid red;
   padding: 2em;
+}
+
+.footer-section {
+  background-color: var(--main-color);
 }/*# sourceMappingURL=App.css.map */
