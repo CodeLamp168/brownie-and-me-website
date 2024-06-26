@@ -18,7 +18,7 @@
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 80px repeat(3, 1fr) 80px;
+    grid-template-rows: 50px repeat(3, 1fr) 80px;
 
 }
 
@@ -34,16 +34,14 @@
 
 .Header {
     @include HeaderStyle;
-    display:grid;
+    display:flex;
     align-items: center;
-    grid-template-columns:200px auto 20px;
     grid-area: 1 / 1 / 2 / 6;
-    height:80px;
     padding:0px 15px;
     
     .head-logo {
-        max-width:250px;
-        flex:wrap
+        text-wrap:nowrap;
+        
     }
     
     .header-nav {
