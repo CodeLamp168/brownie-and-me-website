@@ -13,10 +13,10 @@
 
 .App {
   background: var(--main-background);
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 50px repeat(3, 1fr) 80px;
+  min-height: 100vh;
 }
 
 .Header {
@@ -78,6 +78,30 @@
 }
 
 .footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   grid-area: 5/1/6/6;
   background-color: var(--main-color);
+  padding: 0px 10px;
+}
+
+.Footer-Div {
+  color: var(--main-text-color);
+}
+.Footer-Div h2 {
+  font-size: 32px;
+}
+.Footer-Div p {
+  font-size: 16px;
+}
+.Footer-Div .Footer-Social-Display {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+}
+.Footer-Div .Footer-Social-Display img {
+  width: 32px;
+  height: 32px;
 }/*# sourceMappingURL=App.css.map */
