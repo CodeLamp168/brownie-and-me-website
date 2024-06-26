@@ -102,6 +102,10 @@
   width: 100px;
 }
 .Footer-Div .Footer-Social-Display img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 4px;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
