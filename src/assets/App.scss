@@ -44,9 +44,7 @@
     
     .head-logo {
         text-wrap:nowrap;
-        font-size: 50px;
-        font-family: "LemonJelly";
-        letter-spacing: 1px;
+        font-size: clamp(1rem, -0.25rem + 4vw, 2rem);
         
     }
     
@@ -71,6 +69,8 @@
                 text-align: center;
                 font-weight:600;
                 font-size: clamp(0.875rem, 0.125rem + 2vw, 1.125rem);
+
+                letter-spacing: 2px;
             }
         }
     }
@@ -120,8 +120,9 @@
     color:var(--main-text-color);
 
     h2 {
-        font-family: "LemonJelly";
-        font-size: clamp(1.125rem, -0.0417rem + 4.6667vw, 2rem);
+        font-family: "Blackberry";
+        font-size: clamp(1rem, -0.25rem + 4vw, 2rem);
+        letter-spacing: 2px;
     }
 
     p {

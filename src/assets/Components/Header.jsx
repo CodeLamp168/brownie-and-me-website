@@ -3,7 +3,7 @@ export default function Header(){
     function Logo(){
 
         return(
-            <h2 className="head-logo">Brownie And Me</h2>
+            <h2 className="head-logo">Brownie and Me</h2>
         )
     }
 

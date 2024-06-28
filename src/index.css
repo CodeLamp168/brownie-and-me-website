@@ -2,9 +2,21 @@
 
 
 @font-face {
-  font-family: "LemonJelly";
+  font-family: "Lemonjelly";
   src: url("./fonts/LemonJellyPersonalUse-dEqR.ttf");
 }
+
+@font-face {
+  font-family: "Blackberry";
+  src: url("./fonts/BlackberryJamPersonalUse-rXOB.ttf");
+}
+
+@font-face {
+  font-family: "CinderelaPersonal";
+  src: url("./fonts/CinderelaPersonalUseRegular-RDvM.ttf");
+}
+
+
 
 
 :root {
