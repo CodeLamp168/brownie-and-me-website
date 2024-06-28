@@ -32,7 +32,9 @@
 }
 .Header .head-logo {
   text-wrap: nowrap;
-  font-size: clamp(1.125rem, -0.375rem + 4vw, 1.625rem);
+  font-size: 50px;
+  font-family: "LemonJelly";
+  letter-spacing: 1px;
 }
 .Header .header-nav {
   display: flex;
@@ -93,6 +95,7 @@
   color: var(--main-text-color);
 }
 .Footer-Div h2 {
+  font-family: "LemonJelly";
   font-size: clamp(1.125rem, -0.0417rem + 4.6667vw, 2rem);
 }
 .Footer-Div p {
