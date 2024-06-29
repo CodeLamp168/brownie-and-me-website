@@ -84,6 +84,21 @@
     display:flex;
     align-items: center;
     justify-content: center;
+
+    .hero-display-item {
+        width:320px;
+
+        background-color: var(--main-text-color);
+        padding:10px;
+        margin:0;
+
+        border-radius:10px;
+
+        h2 {
+            text-align: center;
+            line-height: 25px;
+        }
+    }
 }
 
 .hero-section {
@@ -94,15 +109,8 @@
 
 
 
-.hero-section {
-   
-   background-color:var(--main-text-color);
 
-    .hero-info {
-        border:2px solid red;
-        padding:clamp(1em, 2em, 3em);
-    }
-};
+
 
 .footer-section {
     display:flex;

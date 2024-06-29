@@ -7,6 +7,15 @@ export default function Header(){
         )
     }
 
+    function NavButton(){
+
+        return(
+            <div className="navBurgerOpen">
+                <img src="#" alt="404" />
+            </div>
+        )
+    }
+
     function HeaderList(){
 
         return (
