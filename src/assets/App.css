@@ -8,7 +8,7 @@
   --main-color: #543310;
   --main-text-color: #F8F4E1;
   --main-background: #fff8df;
-  --main-alt:#ffd500;
+  --border-style: #363636 ;
 }
 
 .App {
@@ -19,7 +19,7 @@
   min-height: 100vh;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 759px) {
   .header-section {
     grid-area: 1/1/2/8;
   }
@@ -31,22 +31,38 @@
     grid-area: 5/1/6/8;
   }
 }
+@media (min-width: 760px) {
+  .App {
+    grid-template-columns: 40px repeat(4, 1fr) 40px;
+    grid-template-rows: 80px repeat(3, 1fr) 120px;
+  }
+  .header-section {
+    grid-area: 1/1/2/7;
+  }
+  .main-section {
+    grid-area: 2/2/5/6;
+    margin: 20px 0px;
+  }
+  .footer-section {
+    grid-area: 5/1/6/7;
+  }
+}
 @media (min-width: 1280px) {
   .App {
-    grid-template-columns: 100px 6fr 100px;
+    grid-template-columns: 80px repeat(4, 1fr) 80px;
     grid-template-rows: 80px repeat(3, 1fr) 120px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
   .header-section {
-    grid-area: 1/2/2/3;
+    grid-area: 1/2/2/6;
   }
   .main-section {
-    grid-area: 2/2/5/3;
+    grid-area: 2/2/5/6;
     margin: 20px 0px;
   }
   .footer-section {
-    grid-area: 5/2/6/3;
+    grid-area: 5/2/6/6;
   }
 }
 .layout-section {
@@ -54,13 +70,13 @@
 }
 
 .header-section {
-  border-bottom: 1px solid #c2c2c2;
+  border-bottom: 1px solid var(--border-style);
 }
 
 .main-section {
-  border: 1px solid #363636;
+  border: 1px solid var(--border-style);
 }
 
 .footer-section {
-  border-top: 1px solid #c2c2c2;
+  border-top: 1px solid var(--border-style);
 }/*# sourceMappingURL=App.css.map */
