@@ -18,22 +18,22 @@
 
 .App {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 120px repeat(3, 1fr) 120px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
 .header-section {
-  grid-area: 1/2/2/6;
+  grid-area: 1/2/2/7;
 }
 
 .main-section {
-  grid-area: 2/2/5/6;
+  grid-area: 2/2/5/7;
 }
 
 .footer-section {
-  grid-area: 5/2/6/6;
+  grid-area: 5/2/6/7;
 }
 
 .layout-section {
@@ -41,13 +41,13 @@
 }
 
 .header-section {
-  border: 2px solid rgb(255, 0, 0);
+  border-bottom: 1px solid #c2c2c2;
 }
 
 .main-section {
-  border: 2px solid blue;
+  margin: 20px 0px;
 }
 
 .footer-section {
-  border: 2px solid green;
+  border-top: 1px solid #c2c2c2;
 }/*# sourceMappingURL=App.css.map */
