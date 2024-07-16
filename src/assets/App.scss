@@ -19,7 +19,7 @@
 .App {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 120px repeat(3, 1fr) 120px;
+    grid-template-rows: 80px repeat(3, 1fr) 120px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -40,6 +40,7 @@
 
 .main-section {
     margin:20px 0px;
+    border:1px solid #363636;
 }
 
 .footer-section {
