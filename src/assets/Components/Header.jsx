@@ -1,10 +1,11 @@
-export default function Header(){
 
+
+export default function Header(){
 
 
     return(
 
-        <section className="header-section">
+        <section className="header-section layout-section">
             header-box
         </section>
     )

@@ -1,8 +1,10 @@
+
+
 export default function Footer() {
 
     return(
-        <div className="footer-section">
+        <section className="footer-section layout-section">
         footer-box
-        </div>
+        </section>
     )
 }
