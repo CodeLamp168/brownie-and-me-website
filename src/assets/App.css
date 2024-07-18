@@ -70,7 +70,7 @@
 }
 
 .header-section {
-  border-bottom: 1px solid var(--border-style);
+  border: 1px solid var(--border-style);
 }
 
 .main-section {
