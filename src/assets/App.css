@@ -111,11 +111,38 @@
 }
 .header-section .nav-box .nav-item {
   width: 180px;
-  height: 40px;
+  height: 35px;
   border-color: var(--border-style);
   border-top: 1px solid;
   border-left: 1px solid;
 }
 .header-section .nav-box .nav-item:nth-child(2) {
   border-right: 1px solid;
+}
+
+.footer-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-section .footer-text h2 {
+  font-size: 20px;
+}
+.footer-section .footer-text a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.footer-section .social-box {
+  display: flex;
+  margin-top: 10px;
+}
+.footer-section .social-box .social-logo-box {
+  cursor: pointer;
+}
+.footer-section .social-box .social-logo-box .social-logo {
+  padding-top: 2px;
+}
+.footer-section .social-box .messenger-logo-box {
+  margin-right: 10px;
 }/*# sourceMappingURL=App.css.map */
