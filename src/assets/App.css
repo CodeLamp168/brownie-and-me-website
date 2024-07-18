@@ -70,7 +70,7 @@
 }
 
 .header-section {
-  border: 1px solid var(--border-style);
+  border-bottom: 1px solid var(--border-style);
 }
 
 .main-section {
@@ -79,4 +79,30 @@
 
 .footer-section {
   border-top: 1px solid var(--border-style);
+}
+
+.header-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.header-section .logo-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.header-section .nav-box {
+  display: flex;
+  align-items: center;
+}
+.header-section .nav-box .nav-item {
+  width: 160px;
+  height: 40px;
+  border-color: var(--border-style);
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.header-section .nav-box .nav-item:nth-child(2) {
+  border-right: 1px solid;
 }/*# sourceMappingURL=App.css.map */
