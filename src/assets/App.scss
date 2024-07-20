@@ -24,6 +24,7 @@
     display:flex;
     align-items: flex-end;
     justify-content: space-between;
+    position:relative;
 
     .logo-box {
         display:flex;
@@ -45,26 +46,16 @@
 
         .logo-name {
             padding-left:10px;
+            font-size: clamp(1.125rem, -0.2813rem + 3.75vw, 1.5rem);
         }
     }
 
     .nav-box {
         display:flex;
-        align-items: center;
-
-        .nav-item {
-            width:160px;
-            height:35px;
-            border-color:var(--border-style);
-            border-top:1px solid;
-            border-left:1px solid;
-        }
-
-        .nav-item:nth-child(2){
-            border-right:1px solid;
-        }
     }
 }
+
+
 
 //Footer Alignment, Flex, and sizing "NOT responsive yet"//
 
@@ -123,6 +114,34 @@
     .footer-section { 
         grid-area: 5 / 1 / 6 / 8; 
     } 
+
+    //interactive mobile nav box design for responsiveness//
+    .nav-box {
+        //display:none//
+        justify-content:left;
+        align-items: center;
+        position:absolute;
+        width:100%;
+        background-color:rgb(255, 155, 4);
+        height:100%;
+        top:0%;
+
+        border:1px solid red;
+        flex-direction: row;
+
+        .nav-item {
+            border:0px;
+            padding-left:10px;
+            margin:0;
+
+            width:fit-content;
+            height:fit-content;
+
+            color:white;
+
+          
+        }
+    }
 }
 
 
@@ -147,6 +166,25 @@
         grid-area: 5 / 1 / 6 / 7;
 
     }
+
+    //nav-item stylization for TABLET AND DESKTOP
+    .nav-item {
+        border-color:var(--border-style);
+            border-top:1px solid;
+            border-left:1px solid;
+            width:160px;
+            height:35px;
+
+            h3 {
+                padding-left:6px;
+                margin-bottom:2px;
+            }
+    }
+
+    .nav-item:nth-child(2){
+        border-right:1px solid;
+}
+
 
     
 }
@@ -210,8 +248,7 @@
 }
 
 
-//Interactive box for the header nav
-
+//Hover for the header nav items
 .nav-item-interactive-box {
     position:relative;
     display: flex;
@@ -219,9 +256,9 @@
 
     h3{
         align-self: flex-end;
-        padding-left:6px;
-        margin-bottom:2px;
         font-size: 16px;
+
+        font-weight:600;
     }
 
     //nav-item-hover-color-animation
@@ -233,13 +270,19 @@
         bottom: -1px;
         background-color: rgb(255, 155, 4);
         transition: width 0.5s ease;
-    }
 
+    }
     &:hover {
+
         &::before {
             width: 100%;
         }
     }
 
+    @media(max-width:759px){
+        &::before {
+            background-color: rgb(255, 254, 253);
+        }
+    }
 }
 

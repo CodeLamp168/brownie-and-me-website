@@ -23,6 +23,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  position: relative;
 }
 .header-section .logo-box {
   display: flex;
@@ -42,20 +43,10 @@
 }
 .header-section .logo-box .logo-name {
   padding-left: 10px;
+  font-size: clamp(1.125rem, -0.2813rem + 3.75vw, 1.5rem);
 }
 .header-section .nav-box {
   display: flex;
-  align-items: center;
-}
-.header-section .nav-box .nav-item {
-  width: 160px;
-  height: 35px;
-  border-color: var(--border-style);
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-.header-section .nav-box .nav-item:nth-child(2) {
-  border-right: 1px solid;
 }
 
 .footer-section {
@@ -100,6 +91,27 @@
   .footer-section {
     grid-area: 5/1/6/8;
   }
+  .nav-box {
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 155, 4);
+    height: 100%;
+    top: 0%;
+    border: 1px solid red;
+    flex-direction: row;
+  }
+  .nav-box .nav-item {
+    border: 0px;
+    padding-left: 10px;
+    margin: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: white;
+  }
 }
 @media (min-width: 760px) {
   .App {
@@ -115,6 +127,20 @@
   }
   .footer-section {
     grid-area: 5/1/6/7;
+  }
+  .nav-item {
+    border-color: var(--border-style);
+    border-top: 1px solid;
+    border-left: 1px solid;
+    width: 160px;
+    height: 35px;
+  }
+  .nav-item h3 {
+    padding-left: 6px;
+    margin-bottom: 2px;
+  }
+  .nav-item:nth-child(2) {
+    border-right: 1px solid;
   }
 }
 @media (min-width: 1280px) {
@@ -167,9 +193,8 @@
 }
 .nav-item-interactive-box h3 {
   align-self: flex-end;
-  padding-left: 6px;
-  margin-bottom: 2px;
   font-size: 16px;
+  font-weight: 600;
 }
 .nav-item-interactive-box::before {
   content: "";
@@ -182,4 +207,9 @@
 }
 .nav-item-interactive-box:hover::before {
   width: 100%;
+}
+@media (max-width: 759px) {
+  .nav-item-interactive-box::before {
+    background-color: rgb(255, 254, 253);
+  }
 }/*# sourceMappingURL=App.css.map */
