@@ -19,6 +19,76 @@
   min-height: 100vh;
 }
 
+.header-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.header-section .logo-box {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+.header-section .logo-box .logo-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: rgb(131, 107, 107);
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header-section .logo-box .logo-name {
+  padding-left: 10px;
+}
+.header-section .nav-box {
+  display: flex;
+  align-items: center;
+}
+.header-section .nav-box .nav-item {
+  width: 180px;
+  height: 35px;
+  border-color: var(--border-style);
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.header-section .nav-box .nav-item:nth-child(2) {
+  border-right: 1px solid;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.footer-section .footer-text {
+  text-align: center;
+}
+.footer-section .footer-text h2 {
+  font-size: 20px;
+}
+.footer-section .footer-text a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.footer-section .social-box {
+  display: flex;
+}
+.footer-section .social-box .social-logo-box {
+  cursor: pointer;
+}
+.footer-section .social-box .social-logo-box .social-logo {
+  padding-top: 2px;
+}
+.footer-section .social-box .messenger-logo-box {
+  margin-right: 10px;
+}
+
 @media (max-width: 759px) {
   .header-section {
     grid-area: 1/1/2/8;
@@ -63,6 +133,15 @@
   }
   .footer-section {
     grid-area: 5/2/6/6;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer-section .footer-text {
+    text-align: left;
+  }
+  .social-box {
+    margin-top: 10px;
   }
 }
 .layout-section {
@@ -79,70 +158,4 @@
 
 .footer-section {
   border-top: 1px solid var(--border-style);
-}
-
-.header-section {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-.header-section .logo-box {
-  display: flex;
-  align-items: center;
-  padding-left: 5px;
-}
-.header-section .logo-box .logo-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  background-color: rgb(131, 107, 107);
-  border-radius: 30px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.header-section .logo-box .logo-name {
-  padding-left: 10px;
-}
-.header-section .nav-box {
-  display: flex;
-  align-items: center;
-}
-.header-section .nav-box .nav-item {
-  width: 180px;
-  height: 35px;
-  border-color: var(--border-style);
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-.header-section .nav-box .nav-item:nth-child(2) {
-  border-right: 1px solid;
-}
-
-.footer-section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.footer-section .footer-text h2 {
-  font-size: 20px;
-}
-.footer-section .footer-text a {
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-}
-.footer-section .social-box {
-  display: flex;
-  margin-top: 10px;
-}
-.footer-section .social-box .social-logo-box {
-  cursor: pointer;
-}
-.footer-section .social-box .social-logo-box .social-logo {
-  padding-top: 2px;
-}
-.footer-section .social-box .messenger-logo-box {
-  margin-right: 10px;
 }/*# sourceMappingURL=App.css.map */
