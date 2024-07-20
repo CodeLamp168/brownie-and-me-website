@@ -19,8 +19,8 @@ export default function Header(){
 
         return(
             <nav className="nav-box">
-                <div className="nav-item">1</div>
-                <div className="nav-item">2</div>
+                <div className="nav-item nav-item-interactive-box"><h3>MENU</h3></div>
+                <div className="nav-item nav-item-interactive-box"><h3>DELIVERY</h3></div>
             </nav>
         )
     }
