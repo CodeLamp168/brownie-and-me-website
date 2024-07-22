@@ -19,6 +19,19 @@
     min-height:100vh;
 }
 
+//nav buttons
+
+.nav-button {
+    cursor:pointer;
+    width:40px;
+    height:40px;
+
+    transition:transform 0.3s ease-in;
+
+}
+
+
+
 //header alignment, flex, and sizing. Not yet responsive //
 .header-section {
     display:flex;
@@ -104,7 +117,7 @@
 //Mobile 
 @media(max-width:759px){
 
-    .header-section { grid-area: 1 / 1 / 2 / 8; }
+    .header-section { grid-area: 1 / 1 / 2 / 8; position:relative;}
 
     .main-section { 
         grid-area: 2 / 1 / 5 / 8; 
@@ -121,12 +134,15 @@
         justify-content:left;
         align-items: center;
         position:absolute;
+        z-index:1;
         width:100%;
         background-color:rgb(255, 155, 4);
         height:100%;
-        top:0%;
 
-        border:1px solid red;
+        //display responsive design on top:0%;
+        top:-100%;
+
+ 
         flex-direction: row;
 
         .nav-item {
@@ -142,6 +158,15 @@
           
         }
     }
+
+    //interactive btn for mobile
+    .nav-closed-display-style {
+        position:absolute;
+        right:0;
+        bottom:20px;
+    }
+ 
+
 }
 
 
@@ -155,6 +180,10 @@
     .App {
         grid-template-columns: 20px repeat(4, 1fr) 20px;
         grid-template-rows: 80px repeat(3, 1fr) 120px; 
+    }
+
+    .nav-button {
+        display:none;
     }
 
     .header-section {  grid-area: 1 / 1 / 2 / 7; }

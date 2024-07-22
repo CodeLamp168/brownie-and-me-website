@@ -5,7 +5,7 @@ export default function Header(){
      function NavBtnOpen(){
 
         return(
-            <div className="nav-button-open-box">
+            <div className="nav-button-open-box nav-button">
                 <img className="nav-button-img" src="/nav-menu-open.svg" alt="404" />
             </div>
         )
@@ -14,7 +14,7 @@ export default function Header(){
     function NavBtnClose(){
 
         return (
-            <div className="nav-button-close-box">
+            <div className="nav-button-close-box nav-button">
                 <img className="nav-button-display nav-closed-display-style"  src="/nav-menu-close.svg" alt="404" />
             </div>
         )
@@ -40,9 +40,10 @@ export default function Header(){
             <nav className="nav-box">
                 <div className="nav-item nav-item-interactive-box"><h3>MENU</h3></div>
                 <div className="nav-item nav-item-interactive-box"><h3>DELIVERY</h3></div>
+                <NavBtnClose/>
             </nav>
 
-            <NavBtnClose/>
+       
             </>
         )
     }
