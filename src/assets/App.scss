@@ -139,8 +139,10 @@
         background-color:rgb(255, 155, 4);
         height:100%;
 
-        //display responsive design on top:0%;
-        top:-100%;
+        transition:transform 0.3s ease-in-out;
+
+        
+      
 
  
         flex-direction: row;
@@ -158,6 +160,16 @@
           
         }
     }
+
+    
+    //mobile nav class triggers
+    .inactive-nav-box {
+        transform:translateY(-100%);
+    }
+
+    // .active-nav-box {
+    //     transform:translateY(0%);
+    // }
 
     //interactive btn for mobile
     .nav-closed-display-style {

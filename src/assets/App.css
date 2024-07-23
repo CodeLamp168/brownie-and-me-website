@@ -107,7 +107,7 @@
     width: 100%;
     background-color: rgb(255, 155, 4);
     height: 100%;
-    top: -100%;
+    transition: transform 0.3s ease-in-out;
     flex-direction: row;
   }
   .nav-box .nav-item {
@@ -119,6 +119,9 @@
     height: -moz-fit-content;
     height: fit-content;
     color: white;
+  }
+  .inactive-nav-box {
+    transform: translateY(-100%);
   }
   .nav-closed-display-style {
     position: absolute;

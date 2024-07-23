@@ -37,7 +37,7 @@ export default function Header(){
 
         return(
             <>
-            <nav className="nav-box">
+            <nav className="nav-box inactive-nav-box active-nav-box">
                 <div className="nav-item nav-item-interactive-box"><h3>MENU</h3></div>
                 <div className="nav-item nav-item-interactive-box"><h3>DELIVERY</h3></div>
                 <NavBtnClose/>
