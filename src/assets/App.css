@@ -24,6 +24,8 @@
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease-in;
+  border: none;
+  background: none;
 }
 
 .header-section {
@@ -101,32 +103,35 @@
   }
   .nav-box {
     justify-content: left;
-    align-items: center;
+    align-items: flex-end;
     position: absolute;
-    z-index: 1;
     width: 100%;
     background-color: rgb(255, 155, 4);
     height: 100%;
+    transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
     flex-direction: row;
   }
   .nav-box .nav-item {
     border: 0px;
     padding-left: 10px;
-    margin: 0;
+    margin-bottom: 10px;
     width: -moz-fit-content;
     width: fit-content;
     height: -moz-fit-content;
     height: fit-content;
     color: white;
   }
-  .inactive-nav-box {
-    transform: translateY(-100%);
+  .nav-box .nav-item h3 {
+    letter-spacing: 2px;
   }
-  .nav-closed-display-style {
+  .active-nav-box {
+    transform: translateY(0%);
+  }
+  .nav-button-close-box {
     position: absolute;
-    right: 0;
-    bottom: 20px;
+    right: 0px;
+    bottom: 0px;
   }
 }
 @media (min-width: 760px) {

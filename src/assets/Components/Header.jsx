@@ -1,24 +1,7 @@
-
+import { useState } from "react"
 
 export default function Header(){
-
-     function NavBtnOpen(){
-
-        return(
-            <div className="nav-button-open-box nav-button">
-                <img className="nav-button-img" src="/nav-menu-open.svg" alt="404" />
-            </div>
-        )
-    }
-
-    function NavBtnClose(){
-
-        return (
-            <div className="nav-button-close-box nav-button">
-                <img className="nav-button-display nav-closed-display-style"  src="/nav-menu-close.svg" alt="404" />
-            </div>
-        )
-    }
+    const [isNavOpen, setIsNavOpen] = useState(false);
 
     function LogoBox(){
 
@@ -32,12 +15,31 @@ export default function Header(){
         )
     }
 
+    
+     function NavBtnOpen(){
+
+        return(
+            <button className="nav-button-open-box nav-button" onClick={() => setIsNavOpen(true)}>
+                <img className="nav-button-img" src="/nav-menu-open.svg" alt="404" />
+            </button>
+        )
+    }
+
+    function NavBtnClose(){
+
+        return (
+            <button className="nav-button-close-box nav-button" onClick={() => setIsNavOpen(false)}>
+                <img className="nav-button-display nav-closed-display-style"  src="/nav-menu-close.svg" alt="404" />
+            </button>
+        )
+    }
+
     function NavBox(){
 
 
         return(
             <>
-            <nav className="nav-box inactive-nav-box active-nav-box">
+            <nav className={`nav-box ${isNavOpen ? 'active-nav-box' : ''}`}>
                 <div className="nav-item nav-item-interactive-box"><h3>MENU</h3></div>
                 <div className="nav-item nav-item-interactive-box"><h3>DELIVERY</h3></div>
                 <NavBtnClose/>
