@@ -56,7 +56,7 @@ export default function Header(){
         <section className="header-section layout-section">
             <LogoBox/>
             <NavBox/>
-            {/* <NavBtnOpen/> */}
+            <NavBtnOpen/>
         </section>
     )
 }
