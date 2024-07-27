@@ -19,7 +19,8 @@ export default function Header(){
      function NavBtnOpen(){
 
         return(
-            <button className="nav-button-open-box nav-button">
+            <button className={`nav-button-open-box nav-button ${isNavOpen ? 'hidden' : ''}`}
+            onClick={() => setIsNavOpen(true)}>
                 <img className="nav-button-img" src="/nav-menu-open.svg" alt="404" />
             </button>
         )
@@ -28,7 +29,8 @@ export default function Header(){
     function NavBtnClose(){
 
         return (
-            <button className="nav-button-close-box nav-button">
+            <button className={`nav-button-close-box nav-button ${!isNavOpen ? 'hidden' : ''}`}
+            onClick={() => setIsNavOpen(false)}>
                 <img className="nav-button-display nav-closed-display-style"  src="/nav-menu-close.svg" alt="404" />
             </button>
         )
@@ -39,7 +41,7 @@ export default function Header(){
 
         return(
       
-            <div className="nav-wrap nav-wrap-mobile">
+            <div className={`nav-wrap nav-wrap-mobile ${isNavOpen ? 'nav-open' : 'nav-closed'}`}>
                 <nav className="nav-box">
                     <div className="nav-item nav-item-interactive-box"><h3>MENU</h3></div>
                     <div className="nav-item nav-item-interactive-box"><h3>DELIVERY</h3></div>
