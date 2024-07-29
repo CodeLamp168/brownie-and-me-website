@@ -19,7 +19,7 @@ export default function Header(){
      function NavBtnOpen(){
 
         return(
-            <button className={`nav-button-open-box nav-button ${isNavOpen ? 'hidden' : ''}`}
+            <button className='nav-button-open-box nav-button'
             onClick={() => setIsNavOpen(true)}>
                 <img className="nav-button-img" src="/nav-menu-open.svg" alt="404" />
             </button>
@@ -29,7 +29,7 @@ export default function Header(){
     function NavBtnClose(){
 
         return (
-            <button className={`nav-button-close-box nav-button ${!isNavOpen ? 'hidden' : ''}`}
+            <button className='nav-button-close-box nav-button'
             onClick={() => setIsNavOpen(false)}>
                 <img className="nav-button-display nav-closed-display-style"  src="/nav-menu-close.svg" alt="404" />
             </button>
@@ -62,3 +62,5 @@ export default function Header(){
         </section>
     )
 }
+
+

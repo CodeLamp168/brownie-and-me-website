@@ -162,33 +162,7 @@
         grid-area: 5 / 1 / 6 / 8; 
     } 
 
-    //DEPRECATED Mobile Nav interactive box
-    // .nav-box {
-    //     //display:none//
-    //     justify-content:left;
-    //     align-items:flex-end;
-    //     position:absolute;
-    //     width:100%;
-    //     background-color:rgb(255, 155, 4);
-    //     height:100%;
-    //     transform:translateY(-100%);
-    //     transition:transform 0.3s ease-in-out;
-    //     flex-direction: row;
-
-    //     .nav-item {
-    //         border:0px;
-    //         padding-left:10px;
-    //         margin-bottom:10px;
-    //         width:fit-content;
-    //         height:fit-content;
-    //         color:white;
-    //         h3 {
-    //             letter-spacing: 2px;
-    //         }
-    //     }
-    // }
-
-    ///
+ 
 
     //mobile nav css for responsive and button function
     .nav-wrap-mobile {
@@ -396,4 +370,5 @@
         }
     }
 }
+
 
