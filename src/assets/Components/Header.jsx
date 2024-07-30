@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function Header(){
-    const [isNavOpen, setIsNavOpen] = useState(false);
+    const [navActivation, setNavActivation] = useState('-100px');
 
     function LogoBox(){
 
@@ -20,7 +20,7 @@ export default function Header(){
 
         return(
             <button className='nav-button-open-box nav-button'
-            onClick={() => setIsNavOpen(true)}>
+            onClick={() => setNavActivation(`0px`)}>
                 <img className="nav-button-img" src="/nav-menu-open.svg" alt="404" />
             </button>
         )
@@ -30,7 +30,7 @@ export default function Header(){
 
         return (
             <button className='nav-button-close-box nav-button'
-            onClick={() => setIsNavOpen(false)}>
+            onClick={() => setNavActivation(`-100px`)}>
                 <img className="nav-button-display nav-closed-display-style"  src="/nav-menu-close.svg" alt="404" />
             </button>
         )
@@ -41,7 +41,8 @@ export default function Header(){
 
         return(
       
-            <div className={`nav-wrap nav-wrap-mobile ${isNavOpen ? 'nav-open' : 'nav-closed'}`}>
+            <div className="nav-wrap" style={{top: navActivation}}>
+             
                 <nav className="nav-box">
                     <div className="nav-item nav-item-interactive-box"><h3>MENU</h3></div>
                     <div className="nav-item nav-item-interactive-box"><h3>DELIVERY</h3></div>

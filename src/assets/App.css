@@ -120,17 +120,15 @@
   .footer-section {
     grid-area: 5/1/6/8;
   }
-  .nav-wrap-mobile {
+  .nav-wrap {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     position: fixed;
     height: 81px;
     width: 100%;
-    top: 0px;
     background-color: rgb(255, 155, 4);
     color: rgb(255, 255, 255);
-    transition: transform 0.3s ease;
   }
   h3 {
     margin-bottom: 12px;
@@ -142,12 +140,6 @@
   }
   .nav-button-close-box {
     margin-bottom: 7px;
-  }
-  .nav-wrap-mobile.nav-open {
-    transform: translateY(0%);
-  }
-  .nav-wrap-mobile.nav-closed {
-    transform: translateY(-100%);
   }
 }
 @media (min-width: 760px) {

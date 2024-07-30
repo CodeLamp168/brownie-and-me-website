@@ -35,7 +35,7 @@
     margin-bottom:7px;
 }
 
-//
+
 
 
 
@@ -165,20 +165,18 @@
  
 
     //mobile nav css for responsive and button function
-    .nav-wrap-mobile {
+    .nav-wrap {
         display:flex;
         align-items: flex-end;
         justify-content: space-between;
         position:fixed;
         height:81px;
         width:100%;
-        top:0px;
+
 
         background-color:rgb(255, 155, 4);
 
         color:rgb(255, 255, 255);
-
-        transition:transform 0.3s ease;
     }
 
      h3 {
@@ -195,20 +193,6 @@
     .nav-button-close-box {
         margin-bottom:7px;
     }
-    //
-
-  
-    //for nav-active-btn
-    .nav-wrap-mobile.nav-open {
-        transform:translateY(0%);
-    }
-    //
-
-    .nav-wrap-mobile.nav-closed {
-        transform:translateY(-100%);
-    }
- 
-
 }
 
 
