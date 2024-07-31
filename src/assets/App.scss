@@ -112,6 +112,7 @@
     //email-link
     .footer-text {
         text-align:center;
+        border-bottom:3px solid Var(--main-color);
         h2 {
             font-size: clamp(1.125rem, 0.8523rem + 1.3636vw, 1.5rem);
         }
