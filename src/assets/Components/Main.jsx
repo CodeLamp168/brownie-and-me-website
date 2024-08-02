@@ -10,6 +10,14 @@ export default function Main(){
             </div>
         )
     }
+
+    function HeroImg(){
+        return(
+            <div className="hero-img-wrap">
+                <img src="#" alt="404" className="hero-img" />
+            </div>
+        )
+    }
     return(
         <section className="main-section layout-section">
        hero-box
