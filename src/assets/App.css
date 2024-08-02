@@ -19,6 +19,10 @@
   min-height: 100vh;
 }
 
+.layout-section {
+  position: relative;
+}
+
 .nav-button {
   cursor: pointer;
   border: none;
