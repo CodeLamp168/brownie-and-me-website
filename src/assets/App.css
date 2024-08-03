@@ -157,6 +157,9 @@
     grid-area: 2/1/5/8;
     margin: 10px 0px;
   }
+  .main-section .call-to-action h2 {
+    line-height: 45px;
+  }
   .footer-section {
     grid-area: 5/1/6/8;
   }
@@ -234,6 +237,9 @@
   .main-section {
     grid-area: 2/2/5/6;
     margin: 20px 0px;
+  }
+  .main-section .call-to-action h2 {
+    line-height: 75px;
   }
   .footer-section {
     grid-area: 5/2/6/6;
