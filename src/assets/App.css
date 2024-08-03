@@ -83,6 +83,9 @@
 }
 
 .call-to-action {
+  position: absolute;
+  min-width: 320px;
+  max-width: 550px;
   border: 2px solid red;
 }
 .call-to-action h2 {
