@@ -86,10 +86,24 @@
   position: absolute;
   min-width: 320px;
   max-width: 550px;
-  border: 2px solid red;
+  bottom: 30px;
+  right: 0;
+}
+.call-to-action h2, .call-to-action p {
+  text-align: right;
+  font-weight: 500;
 }
 .call-to-action h2 {
+  padding-left: 1em;
+  text-align: right;
+  white-space-collapse: discard;
+  line-height: 75px;
   font-size: clamp(2rem, -0.9136rem + 6.142vw, 4rem);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.call-to-action h2 i {
+  font-weight: 600;
 }
 
 .footer-section {
