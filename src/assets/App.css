@@ -82,6 +82,13 @@
   letter-spacing: 0.5px;
 }
 
+.call-to-action {
+  border: 2px solid red;
+}
+.call-to-action h2 {
+  font-size: clamp(2rem, -0.9136rem + 6.142vw, 4rem);
+}
+
 .footer-section {
   display: flex;
   justify-content: space-between;

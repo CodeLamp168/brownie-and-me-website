@@ -100,7 +100,13 @@
 //
 
 //Main Section{
+.call-to-action {
 
+    border:2px solid red;
+    h2 {
+        font-size: clamp(2rem, -0.9136rem + 6.142vw, 4rem);
+    }
+}
 
 //Footer Alignment, Flex, and sizing "NOT responsive yet"//
 
