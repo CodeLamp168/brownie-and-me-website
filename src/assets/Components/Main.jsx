@@ -18,6 +18,13 @@ export default function Main(){
             </div>
         )
     }
+
+    function BarDesigns(){
+
+        return(
+            <div className="design-bar hero-design-bar"></div>
+        )
+    }
     return(
         <section className="main-section layout-section">
             <HeroCTA/>
