@@ -40,13 +40,14 @@
 
 .design-bar {
     position:absolute;
-    
-    width:700px;
-    height:15px;
+
     background-color:var(--main-color);
 
     bottom:0;
     right:-100px;
+
+    transition:height 0.3s ease-in-out;
+    transition:width 0.3s ease-in-out;
 }
 
 
@@ -255,6 +256,11 @@
     .nav-button-close-box {
         margin-bottom:7px;
     }
+
+    .design-bar {
+        width:1000px;
+        height:12px;
+    }
 }
 
 
@@ -264,6 +270,7 @@
 
 //Tablet
 @media(min-width:760px){
+
 
     .App {
         grid-template-columns: 20px repeat(4, 1fr) 20px;
@@ -291,6 +298,12 @@
     .footer-section { 
         grid-area: 5 / 1 / 6 / 7;
 
+    }
+
+    
+    .design-bar {
+        width:700px;
+        height:12px;
     }
 
     // nav-item desktop BORDER DESIGN
@@ -368,6 +381,9 @@
             margin-top:10px;
         }
         
+        .design-bar {
+            height:15px;
+        }
     
 }
 
