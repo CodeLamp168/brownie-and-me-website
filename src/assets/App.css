@@ -92,10 +92,6 @@
   letter-spacing: 0.5px;
 }
 
-.main-section {
-  overflow-x: hidden;
-}
-
 .call-to-action {
   position: absolute;
   min-width: 320px;
@@ -115,6 +111,7 @@
 }
 .call-to-action h2 i {
   font-weight: 600;
+  border-bottom: 6px solid var(--main-color);
 }
 
 .footer-section {

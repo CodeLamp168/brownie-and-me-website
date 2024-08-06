@@ -113,9 +113,9 @@
 }
 //
 
-.main-section {
-    overflow-x:hidden;
-}
+// .main-section {
+//     overflow-x:hidden;
+// }
 
 //Main Section{
 .call-to-action {
@@ -140,6 +140,7 @@
 
         i {
             font-weight:600;
+            border-bottom:6px solid var(--main-color);
         }
     }
 
@@ -370,7 +371,7 @@
         
         }
         .main-section { 
-            grid-area: 2 / 2 / 5 / 6;; 
+            grid-area: 2 / 2 / 5 / 6;
             margin:20px 0px;
 
             .call-to-action {
