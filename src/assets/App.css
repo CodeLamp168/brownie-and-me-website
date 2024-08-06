@@ -42,6 +42,7 @@
   right: -100px;
   transition: height 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .header-section {
@@ -91,6 +92,10 @@
   letter-spacing: 0.5px;
 }
 
+.main-section {
+  overflow-x: hidden;
+}
+
 .call-to-action {
   position: absolute;
   min-width: 320px;
@@ -102,7 +107,6 @@
   font-weight: 500;
 }
 .call-to-action h2 {
-  padding-left: 1em;
   white-space-collapse: discard;
   line-height: 75px;
   font-size: clamp(2rem, -0.9136rem + 6.142vw, 4rem);
@@ -219,6 +223,9 @@
   }
   .main-section .call-to-action h2, .main-section .call-to-action p {
     text-align: right;
+  }
+  .main-section .call-to-action h2 {
+    padding-left: 1em;
   }
   .footer-section {
     grid-area: 5/1/6/7;

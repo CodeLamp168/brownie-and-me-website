@@ -48,6 +48,8 @@
 
     transition:height 0.3s ease-in-out;
     transition:width 0.3s ease-in-out;
+
+    z-index:10;
 }
 
 
@@ -111,6 +113,10 @@
 }
 //
 
+.main-section {
+    overflow-x:hidden;
+}
+
 //Main Section{
 .call-to-action {
     position:absolute;
@@ -126,7 +132,6 @@
     }
 
     h2 {
-        padding-left:1em;
         white-space-collapse:discard;
         line-height: 75px;
         font-size: clamp(2rem, -0.9136rem + 6.142vw, 4rem);
@@ -298,6 +303,10 @@
         .call-to-action {
             h2, p {
                 text-align: right;
+            }
+
+            h2 {
+                padding-left:1em;
             }
         }
 
