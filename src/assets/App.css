@@ -92,6 +92,10 @@
   letter-spacing: 0.5px;
 }
 
+.main-section {
+  overflow-x: hidden;
+}
+
 .call-to-action {
   position: absolute;
   min-width: 320px;
