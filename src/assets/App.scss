@@ -133,7 +133,7 @@
 
     h2 {
         white-space-collapse:discard;
-        line-height: 75px;
+        
         font-size: clamp(2rem, -0.9136rem + 6.142vw, 4rem);
         text-transform: uppercase;
         margin-bottom:10px;
@@ -307,7 +307,9 @@
             }
 
             h2 {
+                line-height: 45px;
                 padding-left:1em;
+                padding-bottom:15px;
             }
         }
 
@@ -354,6 +356,17 @@
 
 
 //Desktop
+
+@media(min-width:900px){
+
+    .call-to-action {
+        
+
+        h2 {
+            line-height: 90px
+        }
+    }
+}
 @media(min-width:1280px){
     .App {
         grid-template-columns: 80px repeat(4, 1fr) 80px;
@@ -377,7 +390,7 @@
             .call-to-action {
 
                 h2 {
-                    line-height: 75px;
+                    line-height: 75px
                 }
             }
         }
