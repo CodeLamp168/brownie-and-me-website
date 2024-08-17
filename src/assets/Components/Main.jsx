@@ -6,13 +6,18 @@ export default function Main(){
         const HeroDisplayItems = ({ productImg, productName, productText}) => {
             return(
                 <div className="hero-product-item">
-                    <img src="#" alt="404" />
+                    <img src={productImg} alt="404" />
+
+                    <div className="product-text-content">
+                        <h2>{productName}</h2>
+                        <p>{productText}</p>
+                    </div>
                 </div>
             )
         }
 
         return(
-            <div className="hero-gallery-wrap">
+            <div className="hero-product-gallery-wrap">
 
             </div>
         )
