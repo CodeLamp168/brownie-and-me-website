@@ -1,6 +1,17 @@
 
 export default function Main(){
 
+    function HeroGallery(){
+
+        
+
+        return(
+            <div className="hero-gallery-wrap">
+
+            </div>
+        )
+    }
+
 
     function HeroCTA(){
         return(
