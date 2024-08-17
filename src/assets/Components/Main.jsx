@@ -3,7 +3,13 @@ export default function Main(){
 
     function HeroGallery(){
 
-        
+        const HeroDisplayItems = ({ productImg, productName, productText}) => {
+            return(
+                <div className="hero-product-item">
+                    <img src="#" alt="404" />
+                </div>
+            )
+        }
 
         return(
             <div className="hero-gallery-wrap">
