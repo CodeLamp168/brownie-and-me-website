@@ -45,6 +45,13 @@
   z-index: 10;
 }
 
+.hero-product-gallery-wrap {
+  position: relative;
+  border: 2px solid red;
+  width: 750px;
+  height: 100%;
+}
+
 .header-section {
   display: flex;
   align-items: flex-end;
