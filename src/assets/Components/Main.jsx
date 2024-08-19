@@ -49,9 +49,15 @@ export default function Main(){
     }
     return(
         <section className="main-section layout-section">
+            
             <HeroGallery/>
             <HeroCTA/>
             <BarDesigns/>
         </section>
     )
 }
+
+//TODO
+// - Add a Parent to the 3 items inside the main-section
+// - Make hero responsive
+// - Wrap HeroCTA and BarDesign in container
