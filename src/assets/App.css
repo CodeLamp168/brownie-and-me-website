@@ -48,7 +48,8 @@
 .hero-product-gallery-wrap {
   position: relative;
   border: 2px solid green;
-  width: 750px;
+  min-width: 320px;
+  max-width: 650px;
   height: 100%;
 }
 
@@ -113,15 +114,15 @@
 .cta-content-wrap {
   border: 1px solid blue;
   display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
   align-items: end;
-  margin-bottom: 15px;
 }
 
 .call-to-action {
   min-width: 320px;
   max-width: 594px;
-  bottom: 30px;
-  right: 0;
+  border: 1px solid orange;
 }
 .call-to-action h2, .call-to-action p {
   font-weight: 500;
@@ -221,6 +222,9 @@
   .design-bar {
     width: 1000px;
     height: 12px;
+  }
+  .hero-content-wrap {
+    flex-direction: column;
   }
 }
 @media (min-width: 760px) {

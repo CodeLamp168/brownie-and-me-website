@@ -57,7 +57,8 @@
 .hero-product-gallery-wrap {
     position:relative;
     border:2px solid green;
-    width:750px;
+    min-width:320px;
+    max-width:650px;
     height:100%;
 }
 
@@ -140,20 +141,19 @@
 .cta-content-wrap {
     border:1px solid blue;
     display:flex;
+    justify-content:center;
+    margin-bottom:12px;
+
     align-items: end;
-    margin-bottom:15px;
 }
 
 
 .call-to-action {
-
-
     min-width:320px;
     max-width: 594px;
 
+    border:1px solid orange;
 
-    bottom:30px;
-    right:0;
 
     h2, p {
         font-weight:500;
@@ -260,6 +260,7 @@
         grid-area: 5 / 1 / 6 / 8; 
     } 
 
+
  
 
     //mobile nav css for responsive and button function
@@ -296,6 +297,10 @@
     .design-bar {
         width:1000px;
         height:12px;
+    }
+
+    .hero-content-wrap {
+        flex-direction: column;
     }
 }
 
@@ -343,6 +348,8 @@
 
     
     }
+
+    
     .footer-section { 
         grid-area: 5 / 1 / 6 / 7;
 
