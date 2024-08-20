@@ -103,8 +103,17 @@
   overflow-x: hidden;
 }
 
+.hero-content-wrap {
+  display: flex;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.cta-content-wrap {
+  border: 2px solid blue;
+}
+
 .call-to-action {
-  position: absolute;
   min-width: 320px;
   max-width: 550px;
   bottom: 30px;

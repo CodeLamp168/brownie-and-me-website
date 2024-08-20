@@ -46,9 +46,11 @@ export default function Main(){
 
         return(
             <>
-            <div className="call-to-action">
-                <h2>Make your occasion <i>extra</i> special</h2>
-                <p>Discover our irresistible brownies, cookies, and a delightful array of treats, all made with love and the finest ingredients. Whether you're celebrating a special occasion or simply craving a sweet escape, we've got the perfect goodies to satisfy your every desire. </p>
+            <div className="cta-content-wrap">
+                <div className="call-to-action">
+                    <h2>Make your occasion <i>extra</i> special</h2>
+                    <p>Discover our irresistible brownies, cookies, and a delightful array of treats, all made with love and the finest ingredients. Whether you're celebrating a special occasion or simply craving a sweet escape, we've got the perfect goodies to satisfy your every desire. </p>
+                </div>
             </div>
 
             <BarDesigns/>
