@@ -56,7 +56,7 @@
 //hero-gallery with desktop sizing
 .hero-product-gallery-wrap {
     position:relative;
-    border:2px solid red;
+    border:2px solid green;
     width:750px;
     height:100%;
 }
@@ -129,21 +129,27 @@
     overflow-x:hidden;
 }
 
+//desktop alignment WIP
 .hero-content-wrap {
     display:flex;
+    justify-content: space-between;
     height:100%;
     border:2px solid red;
 }
 
 .cta-content-wrap {
-    border:2px solid blue;
+    border:1px solid blue;
+    display:flex;
+    align-items: end;
+    margin-bottom:15px;
 }
 
 
 .call-to-action {
 
+
     min-width:320px;
-    max-width:550px;
+    max-width: 594px;
 
 
     bottom:30px;
