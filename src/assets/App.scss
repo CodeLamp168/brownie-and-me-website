@@ -46,8 +46,8 @@
     bottom:0;
     right:-100px;
 
-    transition:height 0.3s ease-in-out;
-    transition:width 0.3s ease-in-out;
+    transition:height 0.5s ease-in-out;
+    transition:width 0.5s ease-in-out;
 
     z-index:10;
 }
@@ -139,7 +139,6 @@
 
 
 .call-to-action {
-    transition:width 0.3s ease-in;
 
     margin-bottom:20px;
 
@@ -168,6 +167,10 @@
     height:100%;
 
     width:100%;
+}
+
+.call-to-action, .hero-product-gallery-wrap {
+    transition: width 0.5s ease-in;
 }
 
 

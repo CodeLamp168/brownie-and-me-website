@@ -68,6 +68,5 @@ export default function Main(){
 }
 
 //TODO
-// - Add a Parent to the 3 items inside the main-section
-// - Make hero responsive
-// - Wrap HeroCTA and BarDesign in container
+//create the content for hero gallery
+//Make hero gallery responsive and aligned
