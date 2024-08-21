@@ -18,7 +18,26 @@ export default function Main(){
 
         return(
             <div className="hero-product-gallery-wrap">
-
+                 <HeroDisplayItems 
+                productName="Cupcake" 
+                productImg={undefined} 
+                productText={undefined} 
+            />
+            <HeroDisplayItems 
+                productName="Donut" 
+                productImg={undefined} 
+                productText={undefined} 
+            />
+            <HeroDisplayItems 
+                productName="Muffin" 
+                productImg={undefined} 
+                productText={undefined} 
+            />
+            <HeroDisplayItems 
+                productName="Brownie" 
+                productImg={undefined} 
+                productText={undefined} 
+            />
             </div>
         )
     }
