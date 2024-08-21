@@ -134,9 +134,12 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border: 2px solid green;
   height: 100%;
-  width: 750px;
+  min-width: 320px;
+  max-width: 750px;
 }
 
 .hero-product-item {
@@ -256,8 +259,17 @@
   }
   .hero-product-gallery-wrap {
     display: flex;
-    overflow-x: scroll;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .hero-product-item {
+    border: 2px solid purple;
+    width: 100vw;
+    height: 195px;
+    flex-shrink: 0;
+    margin: 0 0px;
   }
 }
 @media (max-width: 899px) {

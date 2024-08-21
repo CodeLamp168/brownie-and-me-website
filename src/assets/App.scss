@@ -169,12 +169,15 @@
     position:relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     border:2px solid green;
 
 
     height:100%;
-    width:750px;
+    min-width:320px;
+    max-width:750px;
 }
 
 //hero items to display
@@ -339,13 +342,22 @@
         width:100%;
     }
 
-    .hero-product-gallery-wrap{
-        display: flex;
-        overflow-x: scroll;
-        flex-wrap: nowrap;
-    }
+    .hero-product-gallery-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content: flex-start;
+    overflow-x:scroll;
 }
 
+.hero-product-item {
+    border: 2px solid purple;
+    width: 100vw; // Full viewport width
+    height: 195px;
+    flex-shrink: 0; // Prevent items from shrinking
+    margin: 0 0px; // Optional: adds spacing between items
+ }
+}
 
 
 //Tablet and Mobile
