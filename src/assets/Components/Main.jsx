@@ -1,3 +1,7 @@
+import cookieImg from '/product-imgs/cookies.jpg'
+import brownieImg from '/product-imgs/brownie.jpg'
+import lemonloafImg from '/product-imgs/lemon-loaf.jpg'
+import muffinImg from '/product-imgs/muffin.jpg'
 
 export default function Main(){
 
