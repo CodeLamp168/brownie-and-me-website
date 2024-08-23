@@ -24,22 +24,22 @@ export default function Main(){
             <div className="hero-product-gallery-wrap">
                  <HeroDisplayItems 
                 productName="Cupcake" 
-                productImg={undefined} 
+                productImg={cookieImg} 
                 productText={undefined} 
             />
             <HeroDisplayItems 
                 productName="Donut" 
-                productImg={undefined} 
+                productImg={lemonloafImg} 
                 productText={undefined} 
             />
             <HeroDisplayItems 
                 productName="Muffin" 
-                productImg={undefined} 
+                productImg={muffinImg} 
                 productText={undefined} 
             />
             <HeroDisplayItems 
                 productName="Brownie" 
-                productImg={undefined} 
+                productImg={brownieImg} 
                 productText={undefined} 
             />
             </div>
