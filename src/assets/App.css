@@ -100,7 +100,6 @@
   display: flex;
   justify-content: space-between;
   height: 100%;
-  border: 2px solid red;
 }
 
 .cta-content-wrap {
@@ -136,15 +135,14 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
   height: 100%;
 }
 
 .hero-product-item {
-  border: 2px solid purple;
+  position: relative;
+  display: inline-block;
   width: 261px;
   height: 195px;
-  display: inline-block;
   margin: 0 10px;
 }
 .hero-product-item img {
@@ -154,8 +152,15 @@
      object-fit: cover;
 }
 .hero-product-item .product-text-content {
+  position: absolute;
   padding: 10px;
   text-align: center;
+  background-color: white;
+  width: 200px;
+  height: auto;
+  bottom: 20px;
+  right: 0;
+  text-align: right;
 }
 .hero-product-item .product-text-content h2 {
   font-size: 1.2em;
