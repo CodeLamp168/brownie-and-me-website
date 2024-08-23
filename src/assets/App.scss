@@ -366,6 +366,7 @@
     align-items:center;
     justify-content: flex-start;
     overflow-x:scroll;
+    overflow-y:hidden;
 }
 
 .hero-product-item {
@@ -374,6 +375,17 @@
     height: 100%;
     flex-shrink: 0; // Prevent items from shrinking
     margin: 0 0px; 
+
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.199);
+    &::after {
+        position:absolute;
+        content:'';
+        height:100%;
+        width:0px;
+        background-color:var(--main-color);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.199);
+        
+    }
  }
 }
 
