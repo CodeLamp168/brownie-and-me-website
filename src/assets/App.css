@@ -352,6 +352,12 @@
     border-right: 1px solid;
   }
 }
+@media (min-width: 900px) {
+  .hero-product-item {
+    margin-top: 5px;
+    height: 180px;
+  }
+}
 @media (min-width: 1280px) {
   .App {
     grid-template-columns: 80px repeat(4, 1fr) 80px;
