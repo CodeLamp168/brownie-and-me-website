@@ -25,14 +25,6 @@
 }
 
 .header-section {
-  border-bottom: 1px solid var(--border-style);
-}
-
-.footer-section {
-  border-top: 1px solid var(--border-style);
-}
-
-.header-section {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -428,4 +420,12 @@
   .nav-item-interactive-box::before {
     background-color: rgb(255, 254, 253);
   }
+}
+
+.header-section {
+  border-bottom: 1px solid var(--border-style);
+}
+
+.footer-section {
+  border-top: 1px solid var(--border-style);
 }/*# sourceMappingURL=App.css.map */

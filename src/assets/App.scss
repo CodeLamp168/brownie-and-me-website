@@ -25,20 +25,6 @@
 }
 
 
-.header-section {
-    border-bottom:1px solid var(--border-style);
-}
-.footer-section {
-    border-top:1px solid var(--border-style)
-}
-
-
-
-
-
-
-
-
 //header alignment, flex, and sizing. Not yet responsive //
 .header-section {
     display:flex;
@@ -615,8 +601,12 @@
     }
 }
 
-
-
-
+//-- border design for top and bottom layout --//
+.header-section {
+    border-bottom:1px solid var(--border-style);
+}
+.footer-section {
+    border-top:1px solid var(--border-style)
+}
 
 
