@@ -23,7 +23,7 @@ export default function Main(){
         return(
             <div className="hero-product-gallery-wrap">
                  <HeroDisplayItems 
-                productName="Cupcake" 
+                productName="Cookie" 
                 productImg={cookieImg} 
                 productText={undefined} 
             />
