@@ -90,6 +90,4 @@ export default function Main(){
     )
 }
 
-//TODO
-//create the content for hero gallery
-//Make hero gallery responsive and aligned
+
