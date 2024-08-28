@@ -265,6 +265,7 @@
   }
   .cta-content-wrap {
     justify-content: center;
+    margin: 20px 0px;
   }
   .call-to-action {
     width: 100%;
@@ -279,7 +280,7 @@
   }
   .hero-product-item {
     width: 100vw;
-    height: 460px;
+    height: 400px;
     flex-shrink: 0;
     margin: 0 0px;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.397);
@@ -312,7 +313,6 @@
   }
   .hero-product-gallery-wrap {
     align-content: center;
-    gap: 10px;
   }
 }
 @media (min-width: 760px) {
@@ -368,8 +368,14 @@
   .nav-item:nth-child(2) {
     border-right: 1px solid;
   }
+  .hero-product-gallery-wrap {
+    gap: 10px;
+  }
 }
 @media (min-width: 900px) {
+  .hero-product-gallery-wrap {
+    overflow-y: hidden;
+  }
   .hero-product-item {
     margin-top: 5px;
     height: 180px;
@@ -452,4 +458,23 @@
   .nav-item-interactive-box::before {
     background-color: rgb(255, 254, 253);
   }
+}
+
+.hero-product-gallery-wrap::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.hero-product-gallery-wrap::-webkit-scrollbar-track {
+  background: orange; /* color of the tracking area */
+}
+
+.hero-product-gallery-wrap::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) rgba(35, 18, 49, 0);
 }/*# sourceMappingURL=App.css.map */
