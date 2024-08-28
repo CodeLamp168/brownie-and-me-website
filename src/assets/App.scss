@@ -169,9 +169,9 @@
     position:relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 
+    justify-content:center;
+    align-content:flex-end;
     height:100%;
 
 }
@@ -367,6 +367,7 @@
     justify-content: flex-start;
     overflow-x:scroll;
     overflow-y:hidden;
+    gap:0px;
 }
 
 .hero-product-item {
@@ -418,6 +419,11 @@
 
     .hero-content-wrap {
         flex-direction: column;
+    }
+
+    .hero-product-gallery-wrap {
+        align-content:center;
+        gap:10px;
     }
 
 }

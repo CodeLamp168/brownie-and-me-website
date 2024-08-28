@@ -134,7 +134,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-content: flex-end;
   height: 100%;
 }
 
@@ -275,6 +275,7 @@
     justify-content: flex-start;
     overflow-x: scroll;
     overflow-y: hidden;
+    gap: 0px;
   }
   .hero-product-item {
     width: 100vw;
@@ -308,6 +309,10 @@
 @media (max-width: 899px) {
   .hero-content-wrap {
     flex-direction: column;
+  }
+  .hero-product-gallery-wrap {
+    align-content: center;
+    gap: 10px;
   }
 }
 @media (min-width: 760px) {
